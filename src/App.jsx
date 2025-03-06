@@ -7,6 +7,7 @@ function App() {
 
   return (
     <>
+    <body>
     <Router>
         <Routes>
           <Route path="/*" element={<Home />} />
@@ -14,7 +15,7 @@ function App() {
           <Route path="/proyectos/:nombre" element={<h1>pers</h1>} />
         </Routes>
     </Router>
-      
+    </body>
     </>
   )
 }
