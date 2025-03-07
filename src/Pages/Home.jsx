@@ -40,9 +40,13 @@ export default function Home() {
                 Sobre mi
               </Typography>
               <Typography variant='body1'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec eros nec risus tincidunt pellentesque
-                non nec purus. Nullam nec eros nec risus tincidunt pellentesque non nec purus. Nullam nec eros nec risus
-                tincidunt pellentesque non nec purus. Nullam nec eros nec risus tincidunt pellentesque non nec purus.
+                Analizo el problema teniendo en cuenta la accesibilidad, usabilidad y experiencia de usuario.
+                Me gusta trabajar en equipo y aprender de los demás.
+                Siempre estoy dispuesto a ayudar a los demás y a compartir mis conocimientos.
+                Me gusta aprender cosas nuevas y estar en constante evolución.
+              </Typography>
+              <Typography variant='body1'>
+                Soy estudiante de Ingeniería en Sistemas en la Universidad Tecnologica Nacional Facultad Regional La Plata.
               </Typography>
             </Grid>
           </Grid>
