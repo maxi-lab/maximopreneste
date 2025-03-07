@@ -13,7 +13,7 @@ export default function CardExpirience({title, description, img, altImg}) {
                     height: "auto",  // Mantiene la proporción de la imagen
                     margin: "0 auto", // Centra horizontalmente
                     display: "block" 
-                }} title={title} />
+                }} title={altImg} />
                 <CardContent>
                     <Typography variant="body2" color="textSecondary" component="p">
                         {description}
