@@ -1,6 +1,7 @@
 import './App.css'
 import { BrowserRouter as Router, Routes,Route } from 'react-router-dom'
 import Home from './Pages/Home'
+import Footer from './Components/Footer'
 
 function App() {
   
@@ -15,6 +16,8 @@ function App() {
           <Route path="/proyectos/:nombre" element={<h1>pers</h1>} />
         </Routes>
     </Router>
+    {/*Footer*/}
+    <Footer/>
     </body>
     </>
   )

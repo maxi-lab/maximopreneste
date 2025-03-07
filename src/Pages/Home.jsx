@@ -2,6 +2,7 @@ import Grid from '@mui/material/Grid2';
 import Typography from '@mui/material/Typography';
 import CardProject from '../Components/CardProject';
 import CardExpirience from '../Components/CardExpirience';
+import CardSkill from '../Components/CardSkill';
 export default function Home() {
     return (
         <>
@@ -28,6 +29,12 @@ export default function Home() {
               </Typography>
               <CardExpirience title="Experiencia 1" description="Descripción de la experiencia 1" img="https://via.placeholder.com/150" altImg="Imagen de la experiencia 1"/>
             </Grid>
+            <Grid size={{xs: 12, md: 12}}>
+              <Typography variant='h2' align='center'>
+                Habilidades
+              </Typography>
+              <CardSkill title="Habilidad 1" img="https://via.placeholder.com/150" altImg="Imagen de la habilidad 1"/>
+              </Grid>
           </Grid>
         </>
       )
