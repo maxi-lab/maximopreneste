@@ -1,6 +1,7 @@
 import { Card, CardHeader, Typography,CardMedia, CardContent } from "@mui/material";
 import Grid from '@mui/material/Grid2';
 
+
 export default function CardProject({title, description, img, link}) {
     return(<>
 
@@ -12,7 +13,7 @@ export default function CardProject({title, description, img, link}) {
                     <Typography variant="body2" color="textSecondary" component="p">
                         {description}
                     </Typography>
-                    {link && <a href="" >Ver proyecto</a>}{/*Pagina del proyecto (links dinamicos)*/}
+                    {link && <a href={link} target="_blank" >Ver proyecto</a>}{/*Pagina del proyecto (links dinamicos)*/}
                 </CardContent>
             </Card>
         </Grid>
