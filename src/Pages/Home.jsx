@@ -34,7 +34,17 @@ export default function Home() {
                 Habilidades
               </Typography>
               <CardSkill title="Habilidad 1" img="https://via.placeholder.com/150" altImg="Imagen de la habilidad 1"/>
-              </Grid>
+            </Grid>
+            <Grid size={{xs: 12, md: 12}}>
+              <Typography variant='h2'>
+                Sobre mi
+              </Typography>
+              <Typography variant='body1'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec eros nec risus tincidunt pellentesque
+                non nec purus. Nullam nec eros nec risus tincidunt pellentesque non nec purus. Nullam nec eros nec risus
+                tincidunt pellentesque non nec purus. Nullam nec eros nec risus tincidunt pellentesque non nec purus.
+              </Typography>
+            </Grid>
           </Grid>
         </>
       )
