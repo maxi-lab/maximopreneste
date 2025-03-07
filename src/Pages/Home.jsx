@@ -3,8 +3,10 @@ import Typography from '@mui/material/Typography';
 import CardProject from '../Components/CardProject';
 import CardExpirience from '../Components/CardExpirience';
 import CardSkill from '../Components/CardSkill';
-import ToDo from'../assets/img/todo.png';
-import py from '../assets/img/python.webp'
+import { skills } from '../Data/skills';
+import { projects } from '../Data/projects';
+import { expirience } from '../Data/expirience';
+
 export default function Home() {
     return (
         <>
@@ -23,19 +25,26 @@ export default function Home() {
               <Typography variant='h2' align='center'>
                 Proyectos
               </Typography>
-              <CardProject title="To Do App" description="Una aplicacion basica de tareas" img={ToDo} link="https://maxi-lab.github.io/Tareas-REACT/"/>
+              {projects.map((project, index) => (
+                <CardProject key={index} title={project.title} description={project.description} img={project.img} altImg={project.altImg} link={project.link} />
+              ))}
             </Grid>
             <Grid size={{xs: 12, md: 6}}>
               <Typography variant='h2' align='center'>
                 Experiencia
               </Typography>
-              <CardExpirience title="Ayudantia de Sintaxis y Semantica de los lenguajes" description="Me encargo de correccion de Trabajos Practicos de Tipos de Datos Abstractos (en Python) y de resolucion de consultas de TAD y automatas." img={py} altImg="En la catedra se utiliza python"/>
+              {expirience.map((exp, index) => (
+                <CardExpirience key={index} title={exp.title} description={exp.description} img={exp.img} altImg={exp.altImg} />
+              ))}
             </Grid>
             <Grid size={{xs: 12, md: 12}}>
               <Typography variant='h2' align='center'>
                 Habilidades
               </Typography>
-              <CardSkill title="Habilidad 1" img="https://via.placeholder.com/150" altImg="Imagen de la habilidad 1"/>
+              {skills.map((skill, index) => (
+
+                <CardSkill key={index} title={skill.title} img={skill.img} alt={skill.alt} />
+              ))}
             </Grid>
             <Grid size={{xs: 12, md: 12}}>
               <Typography variant='h2'>
