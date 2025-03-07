@@ -1,10 +1,11 @@
-import { Box, Button, FormControl, Typography } from '@mui/material';
+import { Box, Button, Divider, FormControl, Typography } from '@mui/material';
 import TextField from '@mui/material/TextField';
 import Grid from '@mui/material/Grid2';
 export default function Footer() {
     return (
         <>
             <footer>
+                <Divider sx={{border:'1px solid'}} />
                 <Grid container spacing={2}>
                     <Grid size={{ xs: 12, md: 6 }}>
                         <Typography variant='body2' align='center'>
@@ -16,13 +17,14 @@ export default function Footer() {
                         <Typography variant='h6' align='center'>
                             Contactame
                         </Typography>
+                        <Divider orientation="vertical"variant="middle" flexItem sx={{border:'1px solid'}}/>
                         <FormControl>
                         <TextField
                         required
                         placeholder='Nombre y apellido'
                         variant='outlined'
-                         />
-                         <TextField
+                        />
+                        <TextField
                         required
                         placeholder='Correo Electronico'
                         variant='outlined'
