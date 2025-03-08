@@ -2,50 +2,13 @@ import Grid from '@mui/material/Grid2';
 import Typography from '@mui/material/Typography';
 import CardProject from '../Components/CardProject';
 import CardExpirience from '../Components/CardExpirience';
-import CardSkill from '../Components/CardSkill';
-import { skills } from '../Data/skills';
+import SkillCarrusel from '../Components/SkillCarrusel';
 import { projects } from '../Data/projects';
 import { expirience } from '../Data/expirience';
-import Slider from "react-slick";
 
 
 export default function Home() {
-  const settings = {
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    speed: 2000,
-    autoplaySpeed: 2000,
-    cssEase: "linear",
-    pauseOnHover: true,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  };
+
   return (
         <>
           <Grid container spacing={2}>
@@ -79,11 +42,7 @@ export default function Home() {
               <Typography variant='h2' align='center'>
                 Habilidades
               </Typography>
-              <Slider {...settings}>              
-              {skills.map((skill, index) => (                
-                <CardSkill key={index} title={skill.title} img={skill.img} alt={skill.alt} />
-              ))}
-              </Slider>
+              <SkillCarrusel/>
             </Grid>
             <Grid size={{xs: 12, md: 12}}>
               <Typography variant='h2'>
