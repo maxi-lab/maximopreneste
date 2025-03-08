@@ -1,8 +1,8 @@
 import { Box, Button, Divider, FormControl, Typography } from '@mui/material';
 import TextField from '@mui/material/TextField';
 import Grid from '@mui/material/Grid2';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GitHubIcon from '@mui/icons-material/GitHub';
+import Social from './Social';
+
 export default function Footer() {
     return (
         <>
@@ -13,12 +13,7 @@ export default function Footer() {
                         <Typography variant='body2' align='center'>
                             2025. Maximo Preneste
                             <Box>
-                            <a href="https://www.linkedin.com/in/máximo-preneste-8549a9229" target='_blanck' ><LinkedInIcon sx={{fontSize:50, color:'black', margin:3,"&:hover":{
-                                 transform:'scale(1.25)',
-                            } }}/></a>
-                            <a href="https://github.com/maxi-lab" target='_blanck'><GitHubIcon sx={{fontSize:50, color:'black', margin:3, "&:hover":{
-                                 transform:'scale(1.25)',
-                            }}}/></a>
+                            <Social/>
                             </Box>
                         </Typography>
                     </Grid>

@@ -5,6 +5,8 @@ import CardExpirience from '../Components/CardExpirience';
 import SkillCarrusel from '../Components/SkillCarrusel';
 import { projects } from '../Data/projects';
 import { expirience } from '../Data/expirience';
+import Social from '../Components/Social';
+import { Box } from '@mui/material';
 
 
 export default function Home() {
@@ -16,6 +18,9 @@ export default function Home() {
             <Typography variant="h1" align="center">
             Maximo Preneste
             </Typography>
+            <Box display='flex' justifyContent='center'>
+            <Social/>
+            </Box>
             </Grid>
             <Grid size={{xs: 12, md: 12}}>
             <Typography variant='subtitle1' align='center'>
