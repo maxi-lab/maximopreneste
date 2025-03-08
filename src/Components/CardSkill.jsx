@@ -3,7 +3,7 @@ import Grid from '@mui/material/Grid2';
 export default function CardSkill({title,img, altImg}) {
     return (<>
         <Grid container spacing={2}>
-            <Card>
+            <Card sx={{background: 'rgb(33, 49, 76)'}}>
                 <CardHeader title={title} />
                 <CardMedia component="img" alt={altImg} image={img} sx={{
                     width: "100%",  // Ajusta el ancho al 100% del contenedor padre

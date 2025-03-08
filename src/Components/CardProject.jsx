@@ -7,7 +7,7 @@ export default function CardProject({title, description, img, link}) {
     return(<>
 
         <Grid container spacing={2}>
-            <Card>
+            <Card sx={{background: 'rgb(33, 49, 76)'}}>
 
                 <CardHeader title={title}/>
                 <CardMedia component="img" alt={`Imagen de ${title}`} image={img} sx={{
