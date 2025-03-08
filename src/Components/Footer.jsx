@@ -2,6 +2,7 @@ import { Box, Button, Divider, FormControl, Typography } from '@mui/material';
 import TextField from '@mui/material/TextField';
 import Grid from '@mui/material/Grid2';
 import Social from './Social';
+import SendIcon from '@mui/icons-material/Send';
 
 export default function Footer() {
     return (
@@ -40,7 +41,7 @@ export default function Footer() {
                         variant='outlined'
                         multiline
                         rows={4}/>
-                        <Button variant='contained' color='primary'>Enviar</Button>
+                        <Button variant='contained' color='primary'><SendIcon/></Button>
                         </FormControl>
                         </Box>
                     </Grid>

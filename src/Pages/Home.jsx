@@ -10,7 +10,6 @@ import { Box } from '@mui/material';
 
 
 export default function Home() {
-
   return (
         <>
           <Grid container spacing={2}>
