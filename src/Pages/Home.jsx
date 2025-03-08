@@ -97,6 +97,8 @@ export default function Home() {
               </Typography>
               <Typography variant='body1'>
                 Soy estudiante de Ingeniería en Sistemas en la Universidad Tecnologica Nacional Facultad Regional La Plata.
+                En la facultad, aprindi Habilidades blandas, como trabajo en equipo, liderazgo, comunicación y resolución de conflictos.
+                Además, la aplicacion de princpios SOLID, el pilar principal de mis proyectos.
               </Typography>
             </Grid>
           </Grid>
