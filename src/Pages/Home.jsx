@@ -30,17 +30,21 @@ export default function Home() {
               <Typography variant='h2' align='center'>
                 Proyectos
               </Typography>
+              <Grid container spacing={2}>
               {projects.map((project, index) => (
                 <CardProject key={index} title={project.title} description={project.description} img={project.img} altImg={project.altImg} link={project.link} />
               ))}
+              </Grid>
             </Grid>
             <Grid size={{xs: 12, md: 6}}>
               <Typography variant='h2' align='center'>
                 Experiencia
               </Typography>
+              <Grid container spacing={2}>
               {expirience.map((exp, index) => (
                 <CardExpirience key={index} title={exp.title} description={exp.description} img={exp.img} altImg={exp.altImg} />
               ))}
+              </Grid>
             </Grid>
             <Grid size={{xs: 12, md: 12}}>
               <Typography variant='h2' align='center'>
