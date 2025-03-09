@@ -14,8 +14,8 @@ export default function Home() {
         <>
           <Grid container spacing={2}>
             <Grid size={{xs: 6, md: 12}}>
-            <Typography variant="h1" align="center">
-            Maximo Preneste
+            <Typography variant="h1" align="center" sx={{fontWeight: 'bold', color:'blue', textShadow:'#63A2B0 10px 0 10px' }}>
+            Máximo Preneste
             </Typography>
             <Box display='flex' justifyContent='center'>
             <Social/>
