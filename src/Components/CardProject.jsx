@@ -7,7 +7,7 @@ export default function CardProject({title, description, img, link}) {
     return(<>
 
         <Grid container spacing={2}>
-            <Card sx={{background: 'rgb(33, 49, 76)', color: 'white'}}>
+            <Card sx={{background: 'rgb(33, 49, 76)', color: 'white','&:hover':{boxShadow: '5px 5px 5px  #1630BE'}}}>
 
                 <CardHeader title={title}/>
                 <CardMedia component="img" alt={`Imagen de ${title}`} image={img} sx={{
@@ -17,8 +17,8 @@ export default function CardProject({title, description, img, link}) {
                     margin: "0 auto", // Centra horizontalmente
                     display: "block" 
                 }} title={title} />
-                <CardContent>
-                    <Typography variant="body2" color="textSecondary" component="p">
+                <CardContent >
+                    <Typography variant="body2"  component="p">
                         {description}
                     </Typography>
                     {link && <a href={link} target="_blank" >Ver proyecto</a>}{/*Pagina del proyecto (links dinamicos)*/}

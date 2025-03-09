@@ -24,7 +24,7 @@ export default function Footer() {
                             Contactame
                         </Typography>
                         <Divider orientation="vertical"variant="middle" flexItem sx={{border:'1px solid'}}/>
-                        <FormControl sx={{margin:'20px'}}>
+                        <FormControl sx={{margin:'20px',alignContent:'center', bgcolor:'white',padding:'20px',borderRadius:'10px'}}>
                         <TextField
                         required
                         placeholder='Nombre y apellido'
