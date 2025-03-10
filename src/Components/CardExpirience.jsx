@@ -5,7 +5,7 @@ export default function CardExpirience({title, description, img, altImg}) {
 
     return(<>
         <Grid container spacing={2}>
-            <Card sx={{background: 'rgb(33, 49, 76)', color: 'white','&:hover':{boxShadow: '-5px -5px 5px  #1630BE'}}}>
+            <Card sx={{background: 'rgb(33, 49, 76)', color: 'white','&:hover':{boxShadow: '#1630BE 10px 0 10px '}}}>
                 <CardHeader title={title}/>
                 <CardMedia component="img" alt={altImg} image={img} sx={{
                     width: "100%",  // Ajusta el ancho al 100% del contenedor padre

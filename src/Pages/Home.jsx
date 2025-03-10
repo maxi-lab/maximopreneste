@@ -17,12 +17,15 @@ export default function Home() {
             <Typography variant="h1" align="center" sx={{fontWeight: 'bold', color:'blue', textShadow:'#63A2B0 10px 0 10px' }}>
             Máximo Preneste
             </Typography>
+            </Grid>
+            <Grid size={{xs: 12, md: 12}}>
             <Box display='flex' justifyContent='center'>
             <Social/>
+            
             </Box>
             </Grid>
             <Grid size={{xs: 12, md: 12}}>
-            <Typography variant='subtitle1' align='center'>
+            <Typography variant='subtitle1' align='center' sx={{fontSize: '2.5rem'}}>
             Un estudiante de Ingeniería en Sistemas apasionado por el desarrollo web.
             </Typography>
             </Grid>
