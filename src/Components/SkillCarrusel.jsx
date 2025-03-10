@@ -10,6 +10,7 @@ export default function SkillCarrusel() {
         slidesToScroll: 1,
         autoplay: true,
         speed: 2000,
+        autoplaySpeed:2000,
         cssEase: "linear",
         pauseOnHover: true,
         responsive: [
