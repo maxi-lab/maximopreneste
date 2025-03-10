@@ -7,7 +7,7 @@ import Footer from './Components/Footer'
 function App() {
   return (
     <>
-    <body>
+    
     <Router>
         <Routes>
           <Route path="/*" element={<Home />} />
@@ -17,7 +17,7 @@ function App() {
     </Router>
     {/*Footer*/}
     <Footer/>
-    </body>
+    
     </>
   )
 }
