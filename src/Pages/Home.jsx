@@ -35,7 +35,7 @@ export default function Home() {
               </Typography>
               <Grid container spacing={2}>
               {projects.map((project, index) => (
-                <CardProject key={index} title={project.title} description={project.description} img={project.img} altImg={project.altImg} link={project.link} />
+                <CardProject key={index} project={project} />
               ))}
               </Grid>
             </Grid>
