@@ -12,10 +12,10 @@ export default function Footer() {
                     <Grid size={{ xs: 12, md: 6 }}>
                         <Typography variant='body2' align='center'>
                             2025. Maximo Preneste
-                            <Box>
-                            <Social/>
-                            </Box>
                         </Typography>
+                        <Box sx={{display:'flex',justifyContent:'center'}}>
+                            <Social/>
+                        </Box>
                     </Grid>
                     <ContactForm/>                    
                 </Grid>
