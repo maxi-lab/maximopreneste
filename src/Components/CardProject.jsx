@@ -3,14 +3,18 @@ import CardActionArea from '@mui/material/CardActionArea';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LanguageIcon from '@mui/icons-material/Language';
 import Grid from '@mui/material/Grid2';
-
+import ModalProject from "./ModalProject";
+import { useState } from "react";
 
 export default function CardProject({project}) {
-    return(<>
+   const [open, setOpen] = useState(false);
+   const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false)
+   return(<>
 
         <Grid container spacing={2}>
             <Card sx={{background: 'rgb(33, 49, 76)', color: 'white','&:hover':{boxShadow: '#1630BE 10px 0 10px'}}}>
-
+                <CardActionArea onClick={handleOpen}>
                 <CardHeader title={project.title}/>
                 <CardMedia component="img" alt={`Imagen de ${project.title}`} image={project.img} sx={{
                     width: "100%",  // Ajusta el ancho al 100% del contenedor padre
@@ -19,6 +23,7 @@ export default function CardProject({project}) {
                     margin: "0 auto", // Centra horizontalmente
                     display: "block" 
                 }} title={project.title} />
+                </CardActionArea>
                 <CardContent >
                     <Typography variant="body2"  component="p">
                         {project.description}
@@ -30,6 +35,7 @@ export default function CardProject({project}) {
                 </CardContent>
             </Card>
         </Grid>
+        <ModalProject project={project} open={open} handleClose={handleClose}/>
 
     </>)
 }
