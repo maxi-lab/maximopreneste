@@ -74,7 +74,7 @@ export default function Home() {
               <Grid item size={{xs:12,md:6}}>
               <Typography variant='body1'  sx={{position:'relative'}} >
                 Soy estudiante de Ingeniería en Sistemas en la Universidad Tecnologica Nacional Facultad Regional La Plata.
-                En la facultad, aprindi Habilidades blandas, como trabajo en equipo, liderazgo, comunicación y resolución de conflictos.
+                En la facultad, aprindí habilidades blandas, como trabajo en equipo, liderazgo, comunicación y resolución de conflictos.
                 Además, la aplicacion de princpios SOLID, el pilar principal de mis proyectos.
               </Typography>
               </Grid>
