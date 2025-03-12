@@ -14,7 +14,7 @@ export default function Home() {
         <>
           <Grid container spacing={2}>
             <Grid size={{xs: 6, md: 12}}>
-            <Typography variant="h1" align="center" sx={{fontWeight: 'bold', color:'blue', textShadow:'#63A2B0 10px 0 10px' }}>
+            <Typography variant="h1" align="center" sx={{fontWeight: 'bold', textShadow:'0 0 10px #63A2B0, 0 0 15px #63A2B0,0 0 30px #63A2B0,0 0 50px #63A2B0' }}>
             Máximo Preneste
             </Typography>
             </Grid>
@@ -68,8 +68,8 @@ export default function Home() {
               </Typography>
               
               </Grid>
-              <Grid item size={{xs:12,md:6}} >
-              <Box component={'img'} src={about} alt="Foto de Máximo Preneste" sx={{maxWidth:"200px",height:'auto', alignContent:'center'}}  margin={2}/>
+              <Grid item size={{xs:12,md:6}}  alignItems={'center'}>
+              <Box component={'img'} src={about} alt="Foto de Máximo Preneste" sx={{maxWidth:"200px",height:'auto',position:'relative',left:20}} />
               </Grid>
               <Grid item size={{xs:12,md:6}}>
               <Typography variant='body1'  sx={{position:'relative'}} >

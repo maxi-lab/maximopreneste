@@ -26,7 +26,7 @@ export default function Social() {
             height:'50px',
             borderRadius:'20%',
             '&:hover':{
-                boxShadow:'inset 0 0 5px  #4fde3c,0 0 5px  #4fde3c',
+                boxShadow:'inset 0 0 10px  #4fde3c,0 0 5px  #4fde3c',
             }
         }}>CV <DownloadIcon/></Button>
         </Box>
