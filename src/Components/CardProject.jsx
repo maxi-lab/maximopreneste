@@ -13,7 +13,7 @@ export default function CardProject({project}) {
    return(<>
 
         <Grid container spacing={2}>
-            <Card sx={{background: 'rgb(33, 49, 76)', color: 'white','&:hover':{boxShadow: '#1630BE 10px 0 10px'}}}>
+            <Card sx={{background: 'rgb(33, 49, 76)', color: 'white' ,'&:hover':{boxShadow: 'inset 0 5px 10px  #1630BE, 0 0 10px '}}}>
                 <CardActionArea onClick={handleOpen}>
                 <CardHeader title={project.title}/>
                 <CardMedia component="img" alt={`Imagen de ${project.title}`} image={project.img} sx={{

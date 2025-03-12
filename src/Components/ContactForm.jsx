@@ -29,28 +29,32 @@ export default function ContactForm() {
         }); 
     }
     return( <>
+        <Grid container>
         <Grid size={{ xs: 12, md: 6 }}>
-                        <Box display='flex' justifyContent='center'>
-                        <Typography variant='h6' align='center' sx={{margin:'40px',alignContent:'center'}}>
-                            Contactame
-                        </Typography>
-                        <Divider orientation="vertical"variant="middle" flexItem sx={{border:'1px solid'}}/>
-                        <FormControl sx={{margin:'20px',alignContent:'center', bgcolor:'white',padding:'20px',borderRadius:'10px'}}>
+            <Box display='flex' justifyContent='center' >
+            <Typography variant='h6' align='center' sx={{margin:'40px',alignContent:'center'}}>
+                Contactame
+            </Typography>
+            </Box>
+        </Grid>
+        <Grid size ={{xs:12,md:6}}>
+                <Box display='flex' justifyContent='center'>
+                <FormControl sx={{margin:'20px',alignContent:'center', bgcolor:'white',padding:'20px',borderRadius:'10px',width:350}}>
                         <TextField
                         required
-                        placeholder='Nombre y apellido'
+                        label='Nombre y apellido'
                         variant='outlined'
                         onChange={(e) => setNombre(e.target.value)}
                         />
                         <TextField
                         required
-                        placeholder='Correo Electronico'
+                        label='Correo Electronico'
                         variant='outlined'
                         onChange={(e) => setEmail(e.target.value)}
                         />
                         <TextField
                         required
-                        placeholder='Mensaje'
+                        label='Mensaje'
                         variant='outlined'
                         multiline
                         onChange={(e) => setMensaje(e.target.value)}
@@ -59,6 +63,7 @@ export default function ContactForm() {
                         </FormControl>
                         </Box>
                     </Grid>
+            </Grid>
     </>)
 
 }
