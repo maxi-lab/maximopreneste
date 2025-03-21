@@ -68,10 +68,10 @@ export default function Home() {
               </Typography>
               
               </Grid>
-              <Grid item size={{xs:12,md:6}}  alignItems={'center'}>
+              <Grid item size={{xs:12,md:4}}  alignItems={'center'}>
               <Box component={'img'} src={about} alt="Foto de Máximo Preneste" sx={{maxWidth:"200px",height:'auto',position:'relative',left:20}} />
               </Grid>
-              <Grid item size={{xs:12,md:6}}>
+              <Grid item size={{xs:12,md:8}}>
               <Typography variant='body1'  sx={{position:'relative'}} >
                 Soy estudiante de Ingeniería en Sistemas en la Universidad Tecnologica Nacional Facultad Regional La Plata.
                 En la facultad, aprindí habilidades blandas, como trabajo en equipo, liderazgo, comunicación y resolución de conflictos.
