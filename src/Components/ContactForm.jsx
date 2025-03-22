@@ -4,30 +4,10 @@ import TextField from '@mui/material/TextField';
 import Grid from '@mui/material/Grid2';
 import emailjs from '@emailjs/browser';
 import { useState } from 'react';
+import useMail from '../Hooks/useMail';
 import CircularProgress from '@mui/material/CircularProgress';
 export default function ContactForm() {
-    const [nombre, setNombre] = useState('');
-    const [email, setEmail] = useState('');
-    const [mensaje, setMensaje] = useState('');
-    const [loading, setLoading] = useState(false);
-    const sendEmail = () => {
-        if(nombre === '' || email === '' || mensaje === ''){
-            alert('Por favor complete todos los campos');
-            return;
-        }
-        setLoading(true);
-        console.log('nombre,email,mensaje');
-       emailjs.send("service_p59t17o","template_tlmhay6",{
-            nombre: nombre,
-            cuerpo: mensaje,
-            reply_to: email,
-            },{publicKey:'Eh0_r8E4ooPEcDYZs'}).then((result) => {alert('Mensaje enviado con exito')
-                setLoading(false);
-            })
-        .catch((error) => {alert('Ocurrio un error al enviar el mensaje');
-        console.log(error)
-        }); 
-    }
+    const {nombre,setNombre,email,setEmail,mensaje,setMensaje,loading,setLoading,sendEmail} = useMail();
     return( <>
         <Grid container >
         <Grid size={{ xs: 12, md: 6 }} id='contacto'>
@@ -45,12 +25,14 @@ export default function ContactForm() {
                         label='Nombre y apellido'
                         variant='outlined'
                         onChange={(e) => setNombre(e.target.value)}
+                        value={nombre}
                         />
                         <TextField
                         required
                         label='Correo Electronico'
                         variant='outlined'
                         onChange={(e) => setEmail(e.target.value)}
+                        value={email}
                         />
                         <TextField
                         required
@@ -58,6 +40,7 @@ export default function ContactForm() {
                         variant='outlined'
                         multiline
                         onChange={(e) => setMensaje(e.target.value)}
+                        value={mensaje}
                         rows={4}/>
                         {loading ? <CircularProgress/> : <Button variant='contained' color='primary' onClick={sendEmail}><SendIcon/></Button>}
                         </FormControl>
