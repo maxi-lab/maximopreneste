@@ -29,7 +29,7 @@ export default function Home() {
             Un estudiante de Ingeniería en Sistemas apasionado por el desarrollo web.
             </Typography>
             </Grid>
-            <Grid size={{xs: 12, md: 6}}>
+            <Grid size={{xs: 12, md: 6}} id="proyectos">
               <Typography variant='h2' align='center'>
                 Proyectos
               </Typography>
@@ -57,7 +57,7 @@ export default function Home() {
             </Grid>
             <Grid container alignItems="center" spacing={2}>
             <Grid item size={{xs: 12, md: 12}}>
-              <Typography variant='h2' align="center">
+              <Typography variant='h2' align="center" id="about">
                 Sobre mi
               </Typography>
               <Typography variant='body1' margin={2}>

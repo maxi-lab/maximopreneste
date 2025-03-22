@@ -29,8 +29,8 @@ export default function ContactForm() {
         }); 
     }
     return( <>
-        <Grid container>
-        <Grid size={{ xs: 12, md: 6 }}>
+        <Grid container >
+        <Grid size={{ xs: 12, md: 6 }} id='contacto'>
             <Box display='flex' justifyContent='center' >
             <Typography variant='h6' align='center' sx={{margin:'40px',alignContent:'center'}}>
                 Contactame

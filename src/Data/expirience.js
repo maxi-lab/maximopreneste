@@ -9,7 +9,7 @@ export const expirience = [
     },
     {
         title: "Ayudantia de Paradigmas de Programacion ",
-        description: "Me encargo de correccion de Trabajos Practicos de Programacion Orientada a Ojetos (en Samalltalk) y de resolucion de consultas de Programacion Funcional (Haskell) y Logica (Prolog).",
+        description: "Me encargo de correccion de Trabajos Practicos de Programacion Orientada a Objetos (en Samalltalk) y de resolucion de consultas de Programacion Funcional (Haskell) y Logica (Prolog).",
         img: poo,
         altImg: "En la catedra se utiliza tambien UML"
     }
