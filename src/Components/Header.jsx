@@ -62,7 +62,7 @@ export default function Header(){
                                 Máximo Preneste
                             </Typography>
                         </Box>
-                        <Box sx={{display:{xs:'none',md:'flex'}}}>
+                        <Box sx={{display:{xs:'none',md:'flex'}}}>    
                             <MenuItem>
                                 <Typography variant="h6" component="a" href='#proyectos' sx={{color:'white'}}>
                                     Proyectos
@@ -78,6 +78,14 @@ export default function Header(){
                                     Contacto
                                 </Typography>
                             </MenuItem>
+                            {scroll>40?
+                                <MenuItem>
+                                <Typography variant="h6" component="a" href='#home' sx={{color:'white'}}>
+                                    Máximo Preneste
+                                </Typography>
+                                </MenuItem>
+                                :null
+                            }
                         </Box>
                     </Toolbar>
 
