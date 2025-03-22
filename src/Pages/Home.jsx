@@ -13,7 +13,7 @@ export default function Home() {
   return (
         <>
           <Grid container spacing={2}>
-            <Grid size={{xs: 6, md: 12}}>
+            <Grid size={{xs: 6, md: 12}} id='home'>
             <Typography variant="h1" align="center" sx={{fontWeight: 'bold', textShadow:'0 0 10px #63A2B0, 0 0 15px #63A2B0,0 0 30px #63A2B0,0 0 50px #63A2B0' }}>
             Máximo Preneste
             </Typography>
