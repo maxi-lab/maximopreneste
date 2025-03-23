@@ -45,7 +45,7 @@ export default function ContactForm() {
                         {loading ? <CircularProgress/> : <Button variant='contained' color='primary' onClick={sendEmail}><SendIcon/></Button>}
                         </FormControl>
                         </Box>
-                        {error&&<Typography variant='body' color='red'>{error}</Typography>}
+                        {error&&<Typography variant='h6 ' color='red' align='center'>{error}</Typography>}
                     </Grid>
             </Grid>
     </>)
