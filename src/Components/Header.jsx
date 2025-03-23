@@ -14,7 +14,7 @@ export default function Header(){
     const {open,handleOpen}=useMenu();
     return(
         <header>    
-            <AppBar  sx={{ position:scroll>40?'fixed':'static',backgroundColor: scroll>40?'transparent':'none',backdropFilter:scroll>40?'blur(10px)':'none',transition:'all 0.5s'}}>
+            <AppBar  sx={{ position:scroll>40?'fixed':'static',backgroundColor: scroll>40?'transparent':'none',backdropFilter:scroll>40?'blur(10px)':'none',transition:'all 0.5s',borderRadius:'10px 10px 10px 10px', background:scroll>40?'none':'#101090'}}>
                 <Container maxWidth='xl'>
                     <Toolbar>
                          <Box sx={{flexGrow:1, display:{xs:'flex',md:'none'}}}>
