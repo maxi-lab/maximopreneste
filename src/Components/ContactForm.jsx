@@ -7,7 +7,7 @@ import { useState } from 'react';
 import useMail from '../Hooks/useMail';
 import CircularProgress from '@mui/material/CircularProgress';
 export default function ContactForm() {
-    const {nombre,setNombre,email,setEmail,mensaje,setMensaje,loading,setLoading,sendEmail} = useMail();
+    const {nombre,setNombre,email,setEmail,mensaje,setMensaje,loading,setLoading,sendEmail,error} = useMail();
     return( <>
         <Grid container >
         <Grid size={{ xs: 12, md: 6 }} id='contacto'>
@@ -45,6 +45,7 @@ export default function ContactForm() {
                         {loading ? <CircularProgress/> : <Button variant='contained' color='primary' onClick={sendEmail}><SendIcon/></Button>}
                         </FormControl>
                         </Box>
+                        {error&&<Typography variant='body' color='red'>{error}</Typography>}
                     </Grid>
             </Grid>
     </>)

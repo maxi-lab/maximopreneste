@@ -1,13 +1,14 @@
 import { useState } from 'react';
 import emailjs from '@emailjs/browser';
 export default function useMail() {
-    const [nombre, setNombre] = useState('');
-    const [email, setEmail] = useState('');
-    const [mensaje, setMensaje] = useState('');
+    const [nombre, setNombre] = useState(null);
+    const [email, setEmail] = useState(null);
+    const [mensaje, setMensaje] = useState(null);
     const [loading, setLoading] = useState(false);
+    const [error, setError] = useState(null);
     const sendEmail = () => {
-        if(nombre === '' || email === '' || mensaje === ''){
-            alert('Por favor complete todos los campos');
+        if(!nombre  || !email  || !mensaje){
+            setError('Por favor complete todos los campos');
             return;
         }
         setLoading(true);
@@ -17,15 +18,16 @@ export default function useMail() {
             cuerpo: mensaje,
             reply_to: email,
             },{publicKey:'Eh0_r8E4ooPEcDYZs'}).then((result) => {
-                alert('Mensaje enviado con exito')
                 setLoading(false);
                 setNombre('');
                 setEmail('');
                 setMensaje('');
+                setError(null);
             })
         .catch((error) => {
-            alert('Ocurrio un error al enviar el mensaje');
+            setError('Ocurrio un error al enviar el mensaje');
+            setLoading(false)
         }); 
     }
-    return {nombre,setNombre,email,setEmail,mensaje,setMensaje,loading,setLoading,sendEmail};
+    return {nombre,setNombre,email,setEmail,mensaje,setMensaje,loading,setLoading,sendEmail,error};
 }
