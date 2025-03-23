@@ -41,51 +41,48 @@ export default function Header(){
                             }}
                               sx={{ display: { xs: 'block', md: 'none' }}}>
                                 <MenuItem onClick={handleOpen}>
-                                    <Typography variant="h6" component="a" href='#proyectos' color='black'  >
+                                    <Typography variant="h6" component="a" href='#proyectos'sx={{textDecoration:'none'}} color='black'  >
                                         Proyectos
                                     </Typography>
                                 </MenuItem>
                                 <MenuItem onClick={handleOpen}>
-                                    <Typography variant="h6" component="a" href='#about' color='black' >
+                                    <Typography variant="h6" component="a" href='#about'sx={{textDecoration:'none'}} color='black' >
                                         Sobre mi
                                     </Typography>
                                 </MenuItem>
                                 <MenuItem onClick={handleOpen}>
-                                    <Typography variant="h6" component="a" href='#contacto' color='black' >
+                                    <Typography variant="h6" component="a" href='#contacto' sx={{textDecoration:'none'}} color='black' >
                                         Contacto
                                     </Typography>
                                 </MenuItem>
                             </Menu>
                         </Box>
                         <Box sx={{display:{xs:'flex',md:'none'},mr:1}}>
-                            <Typography variant="h6" component="a" href='#home' sx={{display:{xs:'flex',md:'none'}}} color='white' >
-                                Máximo Preneste
-                            </Typography>
+                            {scroll>40?<Typography variant="h6" component="a" href='#home' sx={{display:{xs:'flex',md:'none',textDecoration:'none'}}} color='white' >
+                               MP
+                            </Typography>:null}
                         </Box>
                         <Box sx={{display:{xs:'none',md:'flex'}}}>    
                             <MenuItem>
-                                <Typography variant="h6" component="a" href='#proyectos' sx={{color:'white'}}>
+                                <Typography variant="h6" component="a" href='#proyectos' sx={{color:'white',textDecoration:'none'}}>
                                     Proyectos
                                 </Typography>
                             </MenuItem>
                             <MenuItem>
-                                <Typography variant="h6" component="a" href='#about' sx={{color:'white'}}>
+                                <Typography variant="h6" component="a" href='#about' sx={{color:'white',textDecoration:'none'}}>
                                     Sobre mi
                                 </Typography>
                             </MenuItem>
                             <MenuItem>
-                                <Typography variant="h6" component="a" href='#contacto' sx={{color:'white'}}>
+                                <Typography variant="h6" component="a" href='#contacto' sx={{color:'white',textDecoration:'none'}}>
                                     Contacto
                                 </Typography>
                             </MenuItem>
-                            {scroll>40?
-                                <MenuItem>
-                                <Typography variant="h6" component="a" href='#home' sx={{color:'white'}}>
-                                    Máximo Preneste
-                                </Typography>
-                                </MenuItem>
-                                :null
-                            }
+                        </Box>
+                        <Box sx={{display:{xs:'none',md:'flex'},left:'90%',position:'absolute',transform:'translateX(-50%)'}}>
+                        {scroll>40?<Typography variant="h6" component="a" href='#home' sx={{display:{xs:'none',md:'flex',textDecoration:'none'}}} color='white' >
+                           MP
+                        </Typography>:null}
                         </Box>
                     </Toolbar>
 
