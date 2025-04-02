@@ -6,6 +6,7 @@ import emailjs from '@emailjs/browser';
 import { useState } from 'react';
 import useMail from '../Hooks/useMail';
 import CircularProgress from '@mui/material/CircularProgress';
+import { FormattedMessage } from 'react-intl';
 export default function ContactForm() {
     const {nombre,setNombre,email,setEmail,mensaje,setMensaje,loading,setLoading,sendEmail,error} = useMail();
     return( <>
@@ -13,7 +14,7 @@ export default function ContactForm() {
         <Grid size={{ xs: 12, md: 6 }} id='contacto'>
             <Box display='flex' justifyContent='center' >
             <Typography variant='h6' align='center' sx={{margin:'40px',alignContent:'center'}}>
-                Contactame
+            <FormattedMessage id='contact'/>
             </Typography>
             </Box>
         </Grid>
@@ -22,21 +23,21 @@ export default function ContactForm() {
                 <FormControl sx={{margin:'20px',alignContent:'center', bgcolor:'white',padding:'20px',borderRadius:'10px',width:350}}>
                         <TextField
                         required
-                        label='Nombre y apellido'
+                        label={<FormattedMessage id='contact.label1'/>}
                         variant='outlined'
                         onChange={(e) => setNombre(e.target.value)}
                         value={nombre}
                         />
                         <TextField
                         required
-                        label='Correo Electronico'
+                        label={<FormattedMessage id='contact.label2'/>}
                         variant='outlined'
                         onChange={(e) => setEmail(e.target.value)}
                         value={email}
                         />
                         <TextField
                         required
-                        label='Mensaje'
+                        label={<FormattedMessage id='contact.label3'/>}
                         variant='outlined'
                         multiline
                         onChange={(e) => setMensaje(e.target.value)}

@@ -1,0 +1,13 @@
+{
+    "projects":"Proyectos",
+    "about":"Sobre mí",
+    "contact":"Contactame",
+    "short.description":"Un estudiante de Ingeniería en Sistemas apasionado por el desarrollo de software.",
+    "expirience":"Experiencia",
+    "skils":"Habilidades",
+    "about.paragraph1":"Analizo el problema teniendo en cuenta la accesibilidad, usabilidad y experiencia de usuario. Me gusta trabajar en equipo y aprender de los demás. Siempre estoy dispuesto a ayudar a los demás y a compartir mis conocimientos. Me gusta aprender cosas nuevas y estar en constante evolución.",
+    "about.paragraph2":"Soy estudiante de Ingeniería en Sistemas en la Universidad Tecnologica Nacional Facultad Regional La Plata. En la facultad, aprindí habilidades blandas, como trabajo en equipo, liderazgo, comunicación y resolución de conflictos. Además, la aplicación de princpios SOLID es el pilar principal de mis proyectos.",
+    "contact.label1":"Nombre y apellido",
+    "contact.label2":"Correo Electronico",
+    "contact.label3":"Mensaje"
+}

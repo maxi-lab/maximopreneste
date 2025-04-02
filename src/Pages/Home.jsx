@@ -8,6 +8,7 @@ import { expirience } from '../Data/expirience';
 import Social from '../Components/Social';
 import { Box } from '@mui/material';
 import about from '../assets/img/about.jpg'
+import { FormattedMessage } from 'react-intl';
 
 export default function Home() {
   return (
@@ -26,12 +27,12 @@ export default function Home() {
             </Grid>
             <Grid size={{xs: 12, md: 12}}>
             <Typography variant='subtitle1' align='center' sx={{fontSize: '2.5rem'}}>
-            Un estudiante de Ingeniería en Sistemas apasionado por el desarrollo de software.
+            <FormattedMessage id='short.description'/>
             </Typography>
             </Grid>
             <Grid size={{xs: 12, md: 6}} id="proyectos">
               <Typography variant='h2' align='center'>
-                Proyectos
+              <FormattedMessage id='projects' defaultMessage={'Projects'}/>
               </Typography>
               <Grid container spacing={2}>
               {projects.map((project, index) => (
@@ -41,7 +42,7 @@ export default function Home() {
             </Grid>
             <Grid size={{xs: 12, md: 6}}>
               <Typography variant='h2' align='center'>
-                Experiencia
+                <FormattedMessage id='expirience'/>
               </Typography>
               <Grid container spacing={2}>
               {expirience.map((exp, index) => (
@@ -51,20 +52,17 @@ export default function Home() {
             </Grid>
             <Grid size={{xs: 12, md: 12}}>
               <Typography variant='h2' align='center'>
-                Habilidades
+                <FormattedMessage id='skils'/>
               </Typography>
               <SkillCarrusel/>
             </Grid>
             <Grid container alignItems="center" spacing={2}>
             <Grid item size={{xs: 12, md: 12}}>
               <Typography variant='h2' align="center" id="about">
-                Sobre mi
+              <FormattedMessage id='about' />
               </Typography>
               <Typography variant='body1' margin={2}>
-                Analizo el problema teniendo en cuenta la accesibilidad, usabilidad y experiencia de usuario.
-                Me gusta trabajar en equipo y aprender de los demás.
-                Siempre estoy dispuesto a ayudar a los demás y a compartir mis conocimientos.
-                Me gusta aprender cosas nuevas y estar en constante evolución.
+                <FormattedMessage id='about.paragraph1'/>
               </Typography>
               
               </Grid>
@@ -73,9 +71,7 @@ export default function Home() {
               </Grid>
               <Grid item size={{xs:12,md:8}}>
               <Typography variant='body1'  sx={{position:'relative'}} >
-                Soy estudiante de Ingeniería en Sistemas en la Universidad Tecnologica Nacional Facultad Regional La Plata.
-                En la facultad, aprindí habilidades blandas, como trabajo en equipo, liderazgo, comunicación y resolución de conflictos.
-                Además, la aplicacion de princpios SOLID, el pilar principal de mis proyectos.
+                <FormattedMessage id='about.paragraph2'/>
               </Typography>
               </Grid>
               </Grid>
