@@ -46,7 +46,7 @@ export default function Home() {
               </Typography>
               <Grid container spacing={2}>
               {expirience.map((exp, index) => (
-                <CardExpirience key={index} title={exp.title} description={exp.description} img={exp.img} altImg={exp.altImg} />
+                <CardExpirience key={index} exp={exp} />
               ))}
               </Grid>
             </Grid>
