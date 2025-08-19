@@ -1,15 +1,15 @@
+#CI/CD
 name: Deploy
 
 on:
   push:
     branches:
-      -main
+      - main
 jobs:
     build-deploy:
       runs-on: ubuntu-latest
 
       steps: 
-        #Checkout
          - name: Checkout
            uses: actions/checkout@v3
          - name: Set up Node
