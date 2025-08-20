@@ -3,7 +3,7 @@ import css from '../assets/img/css.png'
 import js from '../assets/img/JavaScript-logo.png'
 import py from '../assets/img/python.webp'
 import dj from '../assets/img/django.webp'
-
+import docker from '../assets/img/brand-docker.svg'
 export const skills = [
     {
         title: "HTML5",
@@ -49,6 +49,22 @@ export const skills = [
         title:"SQL Server",
         img: "https://licendi.com/media/magefan_blog/2022/07/210904-Blog-Post-SQL-Server-2-e1630753848251-1.jpg",
         alt:"Logo de SQL Server"
+    }
+    ,
+    {
+        title:"Docker",
+        img: docker,
+        alt:"Logo de Docker"
+    },
+    {
+        title:"TailwindCSS",
+        img: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+        alt:"Logo de TailwindCSS"
+    },
+    {
+        title:"MUI",
+        img: "https://mui.com/static/logo.png",
+        alt:"Logo de MUI"
     }
 
 ]
