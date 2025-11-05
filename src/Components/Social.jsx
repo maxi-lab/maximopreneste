@@ -3,7 +3,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import { Button } from '@mui/material';
 import DownloadIcon from '@mui/icons-material/Download';
 import {Box} from '@mui/material';
-import cv from '../assets/CV Maximo Preneste .pdf';
+import cv from '../assets/CV Maximo Preneste.pdf';
 export default function Social() {
     return(
         <>
