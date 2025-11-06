@@ -12,13 +12,14 @@ export default function CardProject({project}) {
    const handleOpen = () => setOpen(true);
    const handleClose = () => setOpen(false);
    const lang=useContext(languageContext)
+   const {locale}=useContext(languageContext)
    return(<>
 
         <Grid container spacing={2}>
             <Card sx={{background: 'rgb(33, 49, 76)', color: 'white' ,maxWidth:"600px",'&:hover':{boxShadow: 'inset 0 5px 10px  #1630BE, 0 0 10px #1630BE'}}}>
                 <CardActionArea onClick={handleOpen}>
-                <CardHeader title={lang.locale=="es-AR"?project.title:project.t}/>
-                <CardMedia component="img" alt={lang.locale=="es-AR"?`Imagen de ${project.title}`:`Image of ${project.t}`} image={project.img} sx={{
+                <CardHeader title={locale=="es-AR"?project.title:project.t}/>
+                <CardMedia component="img" alt={locale=="es-AR"?`Imagen de ${project.title}`:`Image of ${project.t}`} image={project.img} sx={{
                     width: "100%",  // Ajusta el ancho al 100% del contenedor padre
                     maxWidth: "600px",  // Establece un ancho máximo para limitar el tamaño
                     height: "auto",  // Mantiene la proporción de la imagen

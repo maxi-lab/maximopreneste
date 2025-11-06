@@ -17,7 +17,7 @@ function LanguageContextProvider({children}){
         setLocale("es-AR")
     }
 
-    return <languageContext.Provider value={{cambiarLenguaje}}>
+    return <languageContext.Provider value={{cambiarLenguaje, locale}}>
         <IntlProvider locale={locale} messages={lang}>
         {children}
         </IntlProvider>
