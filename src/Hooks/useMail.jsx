@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import emailjs from '@emailjs/browser';
 export default function useMail() {
-    const [nombre, setNombre] = useState(null);
-    const [email, setEmail] = useState(null);
-    const [mensaje, setMensaje] = useState(null);
+    const [nombre, setNombre] = useState('');
+    const [email, setEmail] = useState('');
+    const [mensaje, setMensaje] = useState('');
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
     const sendEmail = () => {
