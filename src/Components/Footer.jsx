@@ -11,7 +11,7 @@ export default function Footer() {
                 <Grid container spacing={2}>
                     <Grid size={{ xs: 12, md: 6 }} >
                         <Typography variant='body2' align='center'>
-                            2025. Maximo Preneste
+                            2026. Maximo Preneste
                         </Typography>
                         <Box sx={{display:'flex',justifyContent:'center', margin:2}} >
                             <Social/>
