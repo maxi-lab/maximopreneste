@@ -8,15 +8,10 @@ export default function useMail() {
     const [mensaje, setMensaje] = useState('');
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
-    const {locale} = useContext(languageContext);
+
     const sendEmail = () => {
         if(!nombre  || !email  || !mensaje){
-            if(locale==='en-US'){
-                setError('Please fill in all fields');
-            } else{
-            setError('Por favor complete todos los campos');
-        }
-
+            setError('contact.error.empty');
             return;
         }
         setLoading(true);
@@ -33,11 +28,7 @@ export default function useMail() {
                 setError(null);
             })
         .catch((error) => {
-            if(locale==='en-US'){
-                setError('An error occurred while sending the message');
-            } else{
-                setError('Ocurrio un error al enviar el mensaje');
-            }
+            setError('contact.error.send');
             setLoading(false)
         }); 
     }

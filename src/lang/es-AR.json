@@ -9,5 +9,7 @@
     "about.paragraph2":"Soy estudiante de Ingeniería en Sistemas en la Universidad Tecnologica Nacional Facultad Regional La Plata. En la facultad, aprindí habilidades blandas, como trabajo en equipo, liderazgo, comunicación y resolución de conflictos. Además, la aplicación de princpios SOLID es el pilar principal de mis proyectos.",
     "contact.label1":"Nombre y apellido",
     "contact.label2":"Correo Electronico",
-    "contact.label3":"Mensaje"
+    "contact.label3":"Mensaje",
+    "contact.error.empty":"Por favor complete todos los campos",
+    "contact.error.send":"Ocurrio un error al enviar el mensaje"
 }
