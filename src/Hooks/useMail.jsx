@@ -1,14 +1,22 @@
 import { useState } from 'react';
 import emailjs from '@emailjs/browser';
+import { useContext } from 'react';
+import { languageContext } from '../Context/Language';
 export default function useMail() {
     const [nombre, setNombre] = useState('');
     const [email, setEmail] = useState('');
     const [mensaje, setMensaje] = useState('');
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
+    const {locale} = useContext(languageContext);
     const sendEmail = () => {
         if(!nombre  || !email  || !mensaje){
+            if(locale==='en-US'){
+                setError('Please fill in all fields');
+            } else{
             setError('Por favor complete todos los campos');
+        }
+
             return;
         }
         setLoading(true);
@@ -25,7 +33,11 @@ export default function useMail() {
                 setError(null);
             })
         .catch((error) => {
-            setError('Ocurrio un error al enviar el mensaje');
+            if(locale==='en-US'){
+                setError('An error occurred while sending the message');
+            } else{
+                setError('Ocurrio un error al enviar el mensaje');
+            }
             setLoading(false)
         }); 
     }
