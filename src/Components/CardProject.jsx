@@ -16,7 +16,11 @@ export default function CardProject({project}) {
    return(<>
 
         <Grid container spacing={2}>
-            <Card sx={{background: 'rgb(33, 49, 76)', color: 'white' ,maxWidth:"600px",'&:hover':{boxShadow: 'inset 0 5px 10px  #1630BE, 0 0 10px #1630BE'}}}>
+            <Card sx={{background: 'rgb(33, 49, 76)',
+                 color: 'white' ,
+                 maxWidth:"600px",
+                 '&:hover':{boxShadow: 'inset 0 5px 10px  #1630BE, 0 0 10px #1630BE'},
+                 borderRadius:'10px',}}>
                 <CardActionArea onClick={handleOpen}>
                 <CardHeader title={locale=="es-AR"?project.title:project.t}/>
                 <CardMedia component="img" alt={locale=="es-AR"?`Imagen de ${project.title}`:`Image of ${project.t}`} image={project.img} sx={{
