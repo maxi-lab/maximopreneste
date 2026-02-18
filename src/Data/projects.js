@@ -8,7 +8,7 @@ export const projects = [
         title:"Eventhub",
         t:"Eventhub",
         description: "Un sistema de gestion de eventos. Proyecto de Ingenieria de Software.",
-        d:"A event mangement system. Software Engineering project.",
+        d:"A event management system. Software Engineering project.",
         img: is,
         link: "https://eventhub1-1.onrender.com/",
         github: "https://github.com/maxi-lab/eventhub",

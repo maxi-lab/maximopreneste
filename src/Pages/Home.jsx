@@ -15,10 +15,14 @@ export default function Home() {
         <>
           <Grid container spacing={2}>
             <Grid size={{xs: 12, md: 12}} id='home'>
-            <Typography variant="h1" align="center" sx={{fontWeight: 'bold', textShadow:'0 0 10px #63A2B0, 0 0 15px #63A2B0,0 0 30px #63A2B0,0 0 50px #63A2B0',fontSize:{xs:'60px',md:'100px'} }}>
+            <Typography variant="h1" align="center" sx={{fontWeight: 'bold', textShadow:'0 0 10px #63A2B0, 0 0 10px #63A2B0,0 0 30px #63A2B0,0 0 50px #63A2B0',fontSize:{xs:'60px',md:'100px'} }}>
             Máximo Preneste
             </Typography>
+            <Typography variant='h2' align='center' sx={{fontSize: '2.5rem'}}>
+            <FormattedMessage id='short.subtitle'/>
+            </Typography>
             </Grid>
+
             <Grid size={{xs: 12, md: 12}}>
             <Box display='flex' justifyContent='center'>
             <Social/>
@@ -26,7 +30,7 @@ export default function Home() {
             </Box>
             </Grid>
             <Grid size={{xs: 12, md: 12}}>
-            <Typography variant='subtitle1' align='center' sx={{fontSize: '2.5rem'}}>
+            <Typography variant='subtitle1' align='center' sx={{fontSize: '2.5rem',maxWidth:'800px',margin:'0 auto'}}>
             <FormattedMessage id='short.description'/>
             </Typography>
             </Grid>
