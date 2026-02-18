@@ -35,6 +35,8 @@ export default function Home() {
               <Grid size={{xs: 12, md: 8}}>
                 <Typography variant='subtitle1' align='center' sx={{fontSize: '2.5rem',maxWidth:'800px',margin:'0 auto'}}>
                 <FormattedMessage id='short.description'/>
+                <br />
+                <FormattedMessage id='short.description2'/>
                 </Typography>
               </Grid>
               <Grid size={{xs: 12, md: 4}} display='flex' justifyContent='center' alignItems='center'>
