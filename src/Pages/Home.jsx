@@ -8,6 +8,7 @@ import { expirience } from '../Data/expirience';
 import Social from '../Components/Social';
 import { Box } from '@mui/material';
 import about from '../assets/img/about.jpg'
+import geminiImage from '../assets/img/Gemini_Generated_Image_uvjo2huvjo2huvjo-removebg-preview.png'
 import { FormattedMessage } from 'react-intl';
 
 export default function Home() {
@@ -30,9 +31,16 @@ export default function Home() {
             </Box>
             </Grid>
             <Grid size={{xs: 12, md: 12}}>
-            <Typography variant='subtitle1' align='center' sx={{fontSize: '2.5rem',maxWidth:'800px',margin:'0 auto'}}>
-            <FormattedMessage id='short.description'/>
-            </Typography>
+            <Grid container spacing={2} alignItems='center'>
+              <Grid size={{xs: 12, md: 8}}>
+                <Typography variant='subtitle1' align='center' sx={{fontSize: '2.5rem',maxWidth:'800px',margin:'0 auto'}}>
+                <FormattedMessage id='short.description'/>
+                </Typography>
+              </Grid>
+              <Grid size={{xs: 12, md: 4}} display='flex' justifyContent='center' alignItems='center'>
+                <Box component={'img'} src={about} alt="Maximo Preneste" sx={{maxWidth:'250px',height:'auto'}} />
+              </Grid>
+            </Grid>
             </Grid>
             <Grid size={{xs: 12, md: 6}} id="proyectos">
               <Typography variant='h2' align='center'>
@@ -71,7 +79,7 @@ export default function Home() {
               
               </Grid>
               <Grid item size={{xs:12,md:4}}  alignItems={'center'}>
-              <Box component={'img'} src={about} alt="Foto de Máximo Preneste" sx={{maxWidth:"200px",height:'auto',position:'relative',left:20}} />
+              <Box component={'img'} src={geminiImage} alt="Maximo Preneste animated" sx={{maxWidth:"200px",height:'auto',position:'relative',left:20}} />
               </Grid>
               <Grid item size={{xs:12,md:8}}>
               <Typography variant='body1'  sx={{position:'relative'}} >
