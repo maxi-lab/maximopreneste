@@ -4,6 +4,7 @@ import ds from'../assets/img/ds2.jpg';
 import ski from '../assets/img/LOS PINOS.png'
 import is from '../assets/img/Eventhub.png'
 export const projects = [
+   
     {
         title:"Eventhub",
         t:"Eventhub",
@@ -25,9 +26,8 @@ export const projects = [
         link:' https://maxi-lab.github.io/Los-Pinos/',
         github:'https://github.com/maxi-lab/LosPinos',
         tecs:["C#",".NET","React","MUI","SQL Server"],
-        long:"Se implemento un backend con .NET y una base de datos SQL Server. El frontend fue desarrollado con React y MUI. Para la autenticacion se utilizo JWT. Aqui pude aplicar los principios SOLID en el backend. Actualmente, estoy trabajando en mejoras del frontend.",
-        l:"The backend is built on .NET. The database is SQL Server. The frontend was developed on React and MUI (for styles). The authentication is with JWT. Also, when I was disainging the backend I put into practice SOLID principals. At the moment, I'am warking on frontend's upgrades. "
-    },
+        long:"Desarrollé una aplicación Full Stack con arquitectura desacoplada, implementando un backend en .NET Web API y una base de datos SQL Server. El frontend fue construido en React con Material UI, consumiendo los endpoints REST expuestos por la API. En el backend implementé autenticación basada en JWT y apliqué principios SOLID para garantizar una correcta separación de responsabilidades y mantenibilidad del código. Actualmente continúo mejorando la experiencia de usuario y optimizando la interfaz frontend.",
+        l:"I developed a Full Stack application with a decoupled architecture, implementing a backend using .NET Web API and a SQL Server database. The frontend was built with React and Material UI, consuming the REST endpoints exposed by the API. On the backend, I implemented JWT-based authentication and applied SOLID principles to ensure proper separation of responsibilities and maintainable code.I am currently working on improving the user experience and refining the frontend interface."    }, 
     
     {
         title:"Sistema de gestion de ventas y cobranzas",
