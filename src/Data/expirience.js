@@ -2,13 +2,19 @@ import py from '../assets/img/python.webp'
 import poo from '../assets/img/POO.png'
 export const expirience = [
     {
-        title:"Desarrollador Full Stack en Clinica",
-        t:"Full Stack Developer in Clinic",
-        description:"Desarrollé un sistema de gestión clínica utilizando .NET y PostgreSQL, exponiendo APIs REST consumidas por múltiples clientes: una aplicación web en React y un totem basado en Avalonia (check-in de pacientes y gestión de turnos).",
+        title:"Desarrollador Full Stack (Freelance) - Sistema de Gestión Clinica",
+        t:"Full Stack Developer (Freelance) - Clinic Management System",
+        description:"• Desarrollo de servicios backend con .NET y PostgreSQL\n" +
+"• Diseño de APIs REST para los módulos Web y Tótem\n" +
+"• Implementación de autenticación JWT y control de acceso por roles (RBAC)\n" +
+"• Entrega de sistema  para cliente privado\n",
         img: 'https://media2.dev.to/dynamic/image/width=320,height=320,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Forganization%2Fprofile_image%2F4924%2F5b65c955-49bf-40b6-a8c2-d39f566692cf.png',
         altImg: "En la clinica se utiliza .NET y PostgreSQL",
         alternative:".NET y PostgreSQL",
-        desc:"Developed a clinical management system using .NET and PostgreSQL, exposing REST APIs consumed by multiple clients: a React web application and an Avalonia-based totem (patient check-in and queue management). "
+        desc:"• Built backend services with .NET + PostgreSQL \n "+
+"• Designed REST APIs for Web and Totem modules  \n"+
+"• Implemented JWT authentication & RBAC  \n"+
+"• Delivered  system for private client\n"
     },
     {
         title: "Ayudantia de Sintaxis y Semantica de los Lenguajes",
@@ -18,7 +24,6 @@ export const expirience = [
         altImg: "En la catedra se utiliza Python",
         alternative:"Python",
         desc:"I correct projects of abstract data type. The students have to use Python. Moreover, I aswer questions about ADT and automata theory.",
-
     },
     {
         title: "Ayudantia de Paradigmas de Programacion ",

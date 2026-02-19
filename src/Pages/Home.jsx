@@ -44,26 +44,29 @@ export default function Home() {
               </Grid>
             </Grid>
             </Grid>
-            <Grid size={{xs: 12, md: 6}} id="proyectos">
+            <Grid size={{xs: 12, md: 12}} id="experiencia">
+              <Typography variant='h2' align='center'>
+                <FormattedMessage id='expirience'/>
+              </Typography>
+              <Grid container spacing={2}>
+  {expirience.map((exp, index) => (
+    <CardExpirience key={index} exp={exp} />
+  ))}
+</Grid>
+
+            </Grid>
+            <Grid size={{xs: 12, md: 12}} id="proyectos">
               <Typography variant='h2' align='center'>
               <FormattedMessage id='projects' defaultMessage={'Projects'}/>
               </Typography>
+
               <Grid container spacing={2}>
               {projects.map((project, index) => (
                 <CardProject key={index} project={project} />
               ))}
               </Grid>
             </Grid>
-            <Grid size={{xs: 12, md: 6}}>
-              <Typography variant='h2' align='center'>
-                <FormattedMessage id='expirience'/>
-              </Typography>
-              <Grid container spacing={2}>
-              {expirience.map((exp, index) => (
-                <CardExpirience key={index} exp={exp} />
-              ))}
-              </Grid>
-            </Grid>
+            
             <Grid size={{xs: 12, md: 12}}>
               <Typography variant='h2' align='center'>
                 <FormattedMessage id='skils'/>

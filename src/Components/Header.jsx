@@ -45,6 +45,11 @@ export default function Header(){
                             }}
                               sx={{ display: { xs: 'block', md: 'none' }}}>
                                 <MenuItem onClick={handleOpen}>
+                                    <Typography variant="h6" component="a" href='#experiencia'sx={{textDecoration:'none'}} color='black'  >
+                                        <FormattedMessage id='expirience' defaultMessage={'Experiences'}/>
+                                    </Typography>
+                                </MenuItem>
+                                <MenuItem onClick={handleOpen}>
                                     <Typography variant="h6" component="a" href='#proyectos'sx={{textDecoration:'none'}} color='black'  >
                                         <FormattedMessage id='projects' defaultMessage={'Projects'}/>
                                     </Typography>
@@ -76,10 +81,16 @@ export default function Header(){
                         </Box>
                         <Box sx={{display:{xs:'none',md:'flex'}}}>    
                             <MenuItem>
+                                <Typography variant="h6" component="a" href='#experiencia' sx={{color:'white',textDecoration:'none'}}>
+                                    <FormattedMessage id='expirience' defaultMessage={'Experiences'}/>
+                                </Typography>
+                            </MenuItem>
+                            <MenuItem>
                                 <Typography variant="h6" component="a" href='#proyectos' sx={{color:'white',textDecoration:'none'}}>
                                     <FormattedMessage id='projects' defaultMessage={'Projects'}/>
                                 </Typography>
                             </MenuItem>
+                            
                             <MenuItem>
                                 <Typography variant="h6" component="a" href='#about' sx={{color:'white',textDecoration:'none'}}>
                                 <FormattedMessage id='about' />
