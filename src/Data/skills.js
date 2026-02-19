@@ -17,6 +17,12 @@ export const skills = [
         alt:"Logo de React",
         type: 'frontend'
     },
+    { 
+        title:".NET",
+        img: "https://upload.wikimedia.org/wikipedia/commons/e/ee/.NET_Core_Logo.svg",
+        alt:"Logo de .NET",
+        type: 'backend'
+    },
     {
         title: "Python",
         img: py,
@@ -60,12 +66,7 @@ export const skills = [
         alt:"Logo de MUI",
         type: 'frontend'
     },
-    { 
-        title:".NET",
-        img: "https://upload.wikimedia.org/wikipedia/commons/e/ee/.NET_Core_Logo.svg",
-        alt:"Logo de .NET",
-        type: 'backend'
-    },
+    
     {title:"Avalonia UI",
     img: "https://media2.dev.to/dynamic/image/width=320,height=320,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Forganization%2Fprofile_image%2F4924%2F5b65c955-49bf-40b6-a8c2-d39f566692cf.png",
     alt:"Logo de Avalonia UI",
