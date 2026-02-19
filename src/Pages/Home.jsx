@@ -33,14 +33,14 @@ export default function Home() {
             <Grid size={{xs: 12, md: 12}}>
             <Grid container spacing={2} alignItems='center'>
               <Grid size={{xs: 12, md: 8}}>
-                <Typography variant='subtitle1' align='center' sx={{fontSize: '2.5rem',maxWidth:'800px',margin:'0 auto'}}>
+                <Typography variant='subtitle1' align='center' sx={{fontSize: '2.5rem',maxWidth:'900px',margin:'0 auto'}}>
                 <FormattedMessage id='short.description'/>
                 <br />
                 <FormattedMessage id='short.description2'/>
                 </Typography>
               </Grid>
               <Grid size={{xs: 12, md: 4}} display='flex' justifyContent='center' alignItems='center'>
-                <Box component={'img'} src={about} alt="Maximo Preneste" sx={{maxWidth:'250px',height:'auto'}} />
+                <Box component={'img'} src={about} alt="Maximo Preneste" sx={{maxWidth:'250px',height:'auto', borderRadius:"15px"}} />
               </Grid>
             </Grid>
             </Grid>
@@ -75,27 +75,53 @@ export default function Home() {
 
             </Grid>
             <Grid container alignItems="center" spacing={2}>
-            <Grid item size={{xs: 12, md: 12}}>
-              <Typography variant='h2' align="center" id="about">
-              <FormattedMessage id='about' />
-              </Typography>
-              <Typography variant='body1' margin={2}>
-                <FormattedMessage id='about.paragraph1'/>
-              </Typography>
-              
-              </Grid>
-              <Grid item size={{xs:12,md:4}}  alignItems={'center'}>
-              <Box component={'img'} src={geminiImage} alt="Maximo Preneste animated" sx={{maxWidth:"200px",height:'auto',position:'relative',left:20}} />
-              </Grid>
-              <Grid item size={{xs:12,md:8}}>
-              <Typography variant='body1'  sx={{position:'relative'}} >
-                <FormattedMessage id='about.paragraph2'/>
-              </Typography>
-              </Grid>
-              </Grid>
-            
+              <Grid container spacing={4} alignItems="center" justifyContent="center">
+  
+  {/* Título */}
+  <Grid item size={{ xs: 12 }}>
+    <Typography variant='h2' align="center" id="about">
+      <FormattedMessage id='about' />
+    </Typography>
+    <Typography variant='body1' sx={{ maxWidth: '800px', mx: 'auto', mt: 2, px: 2, textAlign: 'center' }}>
+      <FormattedMessage id='about.paragraph1' />
+    </Typography>
+  </Grid>
+
+  {/* Avatar + Texto lado a lado */}
+  <Grid item size={{ xs: 12, md: 5 }} sx={{ display: 'flex', justifyContent: 'center' }}>
+    <Box
+      component={'img'}
+      src={geminiImage}
+      alt="Maximo Preneste animated"
+      sx={{
+        width: { xs: '180px', md: '260px' },
+        height: 'auto',
+        filter: 'drop-shadow(0px 10px 30px rgba(0, 120, 255, 0.3))',
+        transition: 'transform 0.4s ease',
+        '&:hover': {
+          transform: 'translateY(-8px) scale(1.03)',
+        },
+      }}
+    />
+  </Grid>
+
+  <Grid item size={{ xs: 12, md: 7 }} sx={{ display: 'flex', alignItems: 'center' }}>
+    <Typography
+      variant='body1'
+      sx={{
+  px: { xs: 2, md: 0 },
+  lineHeight: 1.8,
+  fontSize: { xs: '1rem', md: '1.1rem' },
+  pl: 3,  // opcional: también podés sacar este padding si ya no hay barra
+}}
+    >
+      <FormattedMessage id='about.paragraph2' />
+    </Typography>
+  </Grid>
+
+</Grid>
             </Grid>
-          
+          </Grid>
         </>
       )
 }

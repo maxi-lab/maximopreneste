@@ -7,11 +7,11 @@
     "short.description2":"Avanced Systems Engineering student focused on clean architecture and best practices.",
     "expirience":"Experience",
     "skils":"Skils",
-    "about.paragraph1":"I analyze a problem taking into account the accessibilty. I enjoy teamwork and learn from my workmates. I'm used to helping people and shearing the knowlage. Also, I always learn new skils.",
-    "about.paragraph2":"I'm System Engineer student of the UTN FRLP. In the university, I have learned soft skils like teamwork, leadership, comunication and solving problems. Futhermore, the SOLID principles are the base of all my projects.",
-    "contact.label1":"Name and Surname",
+   "about.paragraph1": "I analyze problems taking into account accessibility. I enjoy teamwork and learning from my teammates. I'm used to helping people and sharing knowledge. Also, I'm always learning new skills.",
+"about.paragraph2": "I'm a Systems Engineering student at UTN FRLP. At university, I have developed soft skills like teamwork, leadership, communication and problem-solving. Furthermore, the SOLID principles are the foundation of all my projects.",
+ "contact.label1":"Name and Surname",
     "contact.label2":"E-Mail",
-    "contact.label3":"Messege",
+    "contact.label3":"Message",
     "contact.error.empty":"Please fill in all fields",
     "contact.error.send":"An error occurred while sending the message"
 }
