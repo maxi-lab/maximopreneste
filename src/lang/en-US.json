@@ -12,6 +12,7 @@
  "contact.label1":"Name and Surname",
     "contact.label2":"E-Mail",
     "contact.label3":"Message",
+    "contact.success": "Message sent successfully!",
     "contact.error.empty":"Please fill in all fields",
     "contact.error.send":"An error occurred while sending the message"
 }

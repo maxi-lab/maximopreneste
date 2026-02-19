@@ -8,10 +8,12 @@ export default function useMail() {
     const [mensaje, setMensaje] = useState('');
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
+    const [snackbar, setSnackbar] = useState({ open: false, severity: 'success', message: '' });
 
     const sendEmail = () => {
         if(!nombre  || !email  || !mensaje){
             setError('contact.error.empty');
+            setSnackbar({ open: true, severity: 'error', message: 'contact.error.empty' });
             return;
         }
         setLoading(true);
@@ -26,11 +28,13 @@ export default function useMail() {
                 setEmail('');
                 setMensaje('');
                 setError(null);
+                 setSnackbar({ open: true, severity: 'success', message: 'contact.success' });
             })
         .catch((error) => {
-            setError('contact.error.send');
-            setLoading(false)
+            setError('contact.error.send'); 
+            setLoading(false);
+             setSnackbar({ open: true, severity: 'error', message: 'contact.error.send' });
         }); 
     }
-    return {nombre,setNombre,email,setEmail,mensaje,setMensaje,loading,setLoading,sendEmail,error};
+    return {nombre,setNombre,email,setEmail,mensaje,setMensaje,loading,setLoading,sendEmail,error,snackbar,setSnackbar};
 }

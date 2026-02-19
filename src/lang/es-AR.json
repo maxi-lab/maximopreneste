@@ -12,6 +12,7 @@
     "contact.label1":"Nombre y apellido",
     "contact.label2":"Correo Electronico",
     "contact.label3":"Mensaje",
+    "contact.success": "¡Mensaje enviado con éxito!",
     "contact.error.empty":"Por favor complete todos los campos",
     "contact.error.send":"Ocurrio un error al enviar el mensaje"
 }
