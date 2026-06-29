@@ -3,8 +3,15 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import { Button } from '@mui/material';
 import DownloadIcon from '@mui/icons-material/Download';
 import {Box} from '@mui/material';
+import { useContext } from 'react';
+import { languageContext } from '../Context/Language';
 import cv from '../assets/CV Maximo Preneste.pdf';
+import cvEn from '../assets/Maximo_Preneste_CV_EN.pdf';
 export default function Social() {
+    const { locale } = useContext(languageContext);
+    const cvFile = locale === 'en-US' ? cvEn : cv;
+    const downloadName = locale === 'en-US' ? 'Maximo_Preneste_CV_EN.pdf' : 'Maximo_Preneste_CV.pdf';
+
     return(
         <>
         <a href="https://www.linkedin.com/in/máximo-preneste-8549a9229" target='_blanck' ><LinkedInIcon sx={{fontSize:50, color:'white', margin:3,"&:hover":{
@@ -19,9 +26,9 @@ export default function Social() {
             }}>
         <Button variant='outlined'
         component='a'
-        href={cv}
+        href={cvFile}
         target='_blank'
-        download='Maximo_Preneste_CV.pdf'
+        download={downloadName}
         size='small' sx={{
             height:'50px',
             borderRadius:'20%',
