@@ -2,8 +2,8 @@ import py from '../assets/img/python.webp'
 import poo from '../assets/img/POO.png'
 export const expirience = [
     {
-        title:"Desarrollador Full Stack (Freelance) - Sistema de Gestión Clinica",
-        t:"Full Stack Developer (Freelance) - Clinic Management System",
+        title:"Desarrollador Full Stack (Freelance) - Innovo Tecnologias",
+        t:"Full Stack Developer (Freelance) - Innovo",
         description:"• Desarrollo de servicios backend con .NET y PostgreSQL\n" +
 "• Diseño de APIs REST para los módulos Web y Tótem\n" +
 "• Implementación de autenticación JWT y control de acceso por roles (RBAC)\n" +
